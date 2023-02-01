@@ -1,0 +1,15 @@
+dependencyResolutionManagement {
+    versionCatalogs {
+        androidx {
+            from(files("versions/androidx.versions.toml"))
+        }
+
+        lib {
+            from(files("versions/lib.versions.toml"))
+        }
+
+        testLib {
+            from(files("versions/test-lib.versions.toml"))
+        }
+    }
+}

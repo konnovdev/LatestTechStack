@@ -12,5 +12,8 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
+
+apply from: "gradle/version-catalogs.gradle"
+
 rootProject.name = "LatestTechStack"
 include ':app'
