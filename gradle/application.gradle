@@ -1,0 +1,10 @@
+ext {
+    application = [
+            "namespace"   : "com.example.latesttechstack",
+            "id"          : "dev.konnov.databasesandroid",
+            "minApi"      : 24,
+            "maxApi"      : 33,
+            "versionCode" : 1,
+            "versionName" : "1.0",
+    ]
+}

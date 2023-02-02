@@ -3,16 +3,18 @@ plugins {
     id 'org.jetbrains.kotlin.android'
 }
 
+apply(from: "$rootDir/gradle/application.gradle")
+
 android {
-    namespace 'com.example.latesttechstack'
-    compileSdk 33
+    namespace application.namespace
+    compileSdk application.maxApi
 
     defaultConfig {
-        applicationId "com.example.latesttechstack"
-        minSdk 24
-        targetSdk 33
-        versionCode 1
-        versionName "1.0"
+        applicationId application.id
+        minSdk application.minApi
+        targetSdk application.maxApi
+        versionCode application.versionCode
+        versionName application.versionName
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables {
