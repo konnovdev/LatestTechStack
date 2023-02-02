@@ -1,0 +1,1 @@
+This repository will **demonstrate the latest libraries**, as well as test **different architectural approaches** 
